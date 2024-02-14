@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title> Evento </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.4.2-web/css/all.css">
+    <script src = "index.js"> </script>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> <span> E</span>vento </a>
+
+        <nav>
+            <a href="#Home"> Home </a>
+            <a href="#Service"> Service </a>
+            <a href="#About"> About </a>
+            <a href="#Gallery"> Gallery </a>
+            <a href="#Price"> Price </a>
+            <a href="#Contact"> Contact </a>
+        </nav>
+    </header>
+
+    <br> <br> <br> <br>
+
+    <div class = "main"> </div>
+
+    <div class = "color-container">
+        <span class = "gear-span">
+             <div class = "gear-container1"> 
+                <input class = "toggle-color to-press" type = "button" onclick = "changeColor()"> 
+                <div class = "gear-container2">
+                    <i class="fa-solid fa-gear fa-spin fa-lg to-press" onclick = "changeColor()"></i>
+                </div> 
+            </div> 
+        </span>
+        
+        <span class = "change-color">
+            <p> Change Color </p>
+            <div class = "colors">
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: #3867d6" onclick="chooseColor.call(this)"></i> </div>
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: red" onclick="chooseColor.call(this)"></i> </div>
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: purple" onclick="chooseColor.call(this)"></i> </div>
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: green" onclick="chooseColor.call(this)"></i> </div>
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: orange" onclick="chooseColor.call(this)"></i> </div>
+                <div> <i class="fa-solid fa-circle fa-2xl color-button" style = "color: grey" onclick="chooseColor.call(this)"></i> </div>
+            </div>
+        </span>
+    </div>
+
+    <section id="Home">
+        <div class="home-content">
+            <h3> It's time to celebrate! the best <span> event organizers <span> </h3>
+            <div class = "swiper">
+                <div class="container">
+                    <div class = "swiper-slide"> <img src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendy-wei-1190298.jpg&fm=jpg" alt="" class="home-image" /> </div>
+                    <div class = "swiper-slide"> <img src="https://st.depositphotos.com/1020509/3776/i/450/depositphotos_37761283-stock-photo-celebrating-new-year.jpg" alt="" class="home-image" /> </div>
+                    <div class = "swiper-slide"> <img src="https://st4.depositphotos.com/12218988/20301/i/450/depositphotos_203013910-stock-photo-rock-concert-silhouettes-people-happy.jpg" alt="" class="home-image" /> </div>
+                </div>
+                <div class = "swiper-pagination"></div>
+                <div class = "swiper-button-next"></div>
+                <div class = "swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Service">
+        <h3> Our <span> services </span> </h3>
+        <div class="service-content">
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div class="text-head"> Venue Selection </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-envelope"></i>
+
+                <div class="text-head"> Invitation Card </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-music"></i>
+
+                <div class="text-head"> Entertainment </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-utensils"></i>
+
+                <div class="text-head"> Food and Drinks </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-image"></i>
+
+                <div class="text-head"> Photos and Videos </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+
+            <div class="current-service">
+                <i class="fa-solid fa-circle" style="color: var(--main-color);"></i>
+                <i class="fa-solid fa-list-check"></i>
+
+                <div class="text-head"> Custom Food </div>
+                <p> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <h3> <span> About </span> us </h3>
+        <div class="about-content">
+            <div class="image-border">
+                <img src="https://img.freepik.com/premium-photo/silhouette-people-concert-music-festival-with-neon-lights-ai_108146-4664.jpg" alt="" class="about-image" />
+            </div>
+
+            <div>
+                <div class="about-text"> We Will Give A Very Special Celebration For You </div>
+                <div class="about-small"> Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit.
+                    Lorem Ipsum Dolor St. Amet Consectetur Adipisicing Elit. Porro. Suscipit. <br> <br> Lorem Ipsum Dolor St.
+                    Amet Consectetur Adipisicing Elit. Porro. Suscipit. Lorem Ipsum Dolor St. Amet Consectetur
+                    Adipisicing Elit.
+                </div>
+
+                <input type = "button" class = "button-contact-us" value = "Contact Us"> </input>
+            </div>
+    </section>
+
+    <section id="Gallery">
+        <h3> <span> Our </span> Gallery </h3>
+        <div class="gallery-content">
+            <div class="gallery-image" id = "one"> </div>
+            <div class="gallery-image" id = "two"> </div>
+            <div class="gallery-image" id = "three"> </div> 
+            <div class="gallery-image" id = "four"> </div>
+            <div class="gallery-image" id = "five"> </div>
+            <div class="gallery-image" id = "six"> </div>
+            <div class="gallery-image" id = "seven"> </div>
+            <div class="gallery-image" id = "eight"> </div>
+        </div>
+    </section>
+
+    <section id="Price">
+        <h3> Our <span> Price </span> </h3>
+        <div class="price-content">
+            <div class = "price-card"> 
+                <div class = "price-text"> For Birthdays </div>
+                <div class = "price"> $250.99 </div>
+
+                <ul>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Full Services </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Decorations </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Music and Photos </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Food and Drinks </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Invitation Card </li>
+                </ul>
+
+                <input type = "button" class = "button-check-out" value = "Check Out"> </input>
+            </div>
+
+            <div class = "price-card"> 
+                <div class = "price-text"> For Weddings </div>
+                <div class = "price"> $450.99 </div>
+
+                <ul>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Full Services </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Decorations </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Music and Photos </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Food and Drinks </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Invitation Card </li>
+                </ul>
+
+                <input type = "button" class = "button-check-out" value = "Check Out"> </input>
+            </div>
+
+            <div class = "price-card"> 
+                <div class = "price-text"> For Concerts </div>
+                <div class = "price"> $650.99 </div>
+
+                <ul>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Full Services </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Decorations </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Music and Photos </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Food and Drinks </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Invitation Card </li>
+                </ul>
+
+                <input type = "button" class = "button-check-out" value = "Check Out"> </input>
+            </div>
+
+            <div class = "price-card"> 
+                <div class = "price-text"> For Others </div>
+                <div class = "price"> $850.99 </div>
+
+                <ul>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Full Services </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Decorations </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Music and Photos </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Food and Drinks </li>
+                    <li> <i class="fa-solid fa-check" style = "color: var(--main-color);"></i> Invitation Card </li>
+                </ul>
+
+                <input type = "button" class = "button-check-out" value = "Check Out"> </input>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <h3> <span> Contact </span> us </h3>
+        <div class="contact-content">
+            <form class = "inputs">
+                <div class = "input-box"> 
+                    <input type = "text" placeholder = "  Name" class = "input-field"/>
+                    <input type = "email" placeholder = "  Email" class = "input-field"/>
+                </div>
+                <div class = "input-box"> 
+                    <input type = "text" placeholder = "  Number" class = "input-field"/>
+                    <input type = "text" placeholder = "  Subject" class = "input-field"/> 
+                </div>
+                <textarea placeholder = "  Your Message" id = "msg" cols = "30" rows = "10" class = "input-field-area"></textarea>
+                <input type = "button" class = "button-check-out" value = "Send Message"> </input>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class = "for-more-container"> 
+            <div class = "for-more">  
+                <h3> Branches </h3>
+                <ul>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Mumbai </a> </li>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Jogeshwari </a> </li>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Goregaon </a> </li>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Navi Mumbai </a> </li>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Andheri </a> </li>
+                </ul>
+            </div>
+
+            <div class = "for-more">  
+                <h3> Quick Links </h3>
+                <ul>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#Home"> Home </a> </li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#Service"> Service </a> </li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#About"> About </a> </li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#Gallery"> Gallery </a> </li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#Price"> Price </a> </li>
+                    <li> <i class="fa-solid fa-arrow-right"></i> <a href = "#Contact"> Contact </a> </li>
+                </ul>
+            </div>
+
+            <div class = "for-more">  
+                <h3> Contact Info </h3>
+                <ul>
+                    <li> <i class="fa-solid fa-phone"></i> <a href = "#"> +123-456-7890 </a> </li>
+                    <li> <i class="fa-solid fa-phone"></i> <a href = "#"> +111-222-3333 </a> </li>
+                    <li> <i class="fa-solid fa-at"></i> <a href = "#"> sitecreator@gmail.com </a> </li>
+                    <li> <i class="fa-solid fa-at"></i> <a href = "#"> sitecreator@gmail.com </a> </li>
+                    <li> <i class="fa-solid fa-location-dot"></i> <a href = "#"> Mumbai, India - 400104 </a> </li>
+                </ul>
+            </div>
+
+            <div class = "for-more">  
+                <h3> Follow US </h3>
+                <ul>
+                    <li> <i class="fa-brands fa-facebook-f"></i> <a href = "#"> Facebook </a> </li>
+                    <li> <i class="fa-brands fa-twitter"></i> <a href = "#"> Twitter </a> </li>
+                    <li> <i class="fa-brands fa-instagram"></i> <a href = "#"> Instagram </a> </li>
+                    <li> <i class="fa-brands fa-linkedin"></i> <a href = "#"> Linkedin </a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "credits">
+            <p> Created by <span class = "creator"> M Team </span> | All Rights Reserved </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;700&display=swap');
+
+:root{
+    --main-color: #3867d6;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    --header-color: #333;
+    --footer-color: #101010;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+nav a:hover{
+    color: var(--main-color);
+    transition: 0.2s linear;
+}
+
+.main{
+    background-color: var(--main-color);
+}
+
+header {
+    position: fixed;
+    display: flex;
+    background-color: #333;
+    padding: 1.5rem 9%;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background-color: #222;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+section{
+    padding: 80px;
+}
+
+h3{
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 span{
+    color: var(--main-color);
+}
+
+.home-content{
+    padding-bottom: 2rem;
+    margin: 2rem auto;
+    max-width: 50rem;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #eee;
+}
+
+.color-container{
+    display: flex;
+    justify-content: end;
+}
+
+.change-color{
+    display: none;
+    height: 100px;
+    width: 120px;
+    background-color: var(--header-color);
+    right: 0px;
+}
+
+.change-color p{
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 10px;
+}
+
+.colors{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    margin-top: 8px;
+    max-width: 100px;
+}
+
+.color-button:hover{
+    cursor: pointer;
+}
+
+.gear-span{
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    background-color: var(--header-color);
+    position: fixed;
+    right: 0px;
+}
+
+.gear-container1{
+    display: flex;
+    width: 38px;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-color{
+    width: 38px;
+    height: 38px;
+    background: var(--header-color);
+    position: absolute;
+    border: none;
+}
+
+.to-press:hover{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.home-image{
+    text-align: center;
+    max-width: 50rem;
+    padding-top: 2rem;
+    width: 350px;
+    height: 500px;
+}
+
+.home-image:hover{
+    transform: scale(1.05);
+}
+
+.service-content{
+    padding-bottom: 2rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.current-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--header-color);
+    margin: 0.5rem;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    max-width: 15rem;
+}
+
+.current-service:hover{
+    background-color: #444;
+}
+
+.text-head{
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+
+.service-content .fa-circle{
+    font-size: 3rem;
+    position: relative;
+}
+
+.service-content .fa-location-dot, .fa-envelope, .fa-music, .fa-utensils, .fa-image, .fa-list-check{
+    font-size: 1.5rem;
+    position: absolute;
+    padding-bottom: 111px;
+    padding-left: 111px;
+    color: white;
+}
+
+.service-content .fa-envelope, .fa-music, .fa-image, .fa-list-check, .fa-utensils{
+    padding-bottom: 111px;
+    padding-left: 108px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 95rem;
+    width: 100rem;
+    padding-top: 50px;
+}
+
+.about-image{
+    text-align: center;
+    max-width: 50rem;
+    width: 50rem;
+    border: solid white 5px;
+    border-radius: 1.5rem;
+}
+
+.about-image:hover{
+    transform: scale(1.03);
+}
+
+.about-text{
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 80px;
+}
+
+.about-text, .about-small{
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.about-text{
+    font-weight: light;
+}
+
+.button-contact-us{
+    margin-left: 2rem;
+}
+
+.button-contact-us:hover{
+    color: var(--header-color);
+    transition: 0.2s linear;
+}
+
+.gallery-content{
+    padding-bottom: 2rem;
+    margin: 2rem auto;
+    max-width: 80rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.gallery-image{
+    text-align: center;
+    background-color: var(--header-color);
+    margin: 0.5rem;
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    width: 12rem;
+    height: 8rem;
+    background-image: url(https://img.freepik.com/premium-photo/concert-crowd-with-colorful-stage-lights-confetti_176841-15454.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid white 5px;
+}
+
+#one{
+    background-image: url(https://img.freepik.com/premium-photo/concert-crowd-with-colorful-stage-lights-confetti_176841-15454.jpg);
+}
+
+#two{
+    background-image: url(https://images.pexels.com/photos/1763067/pexels-photo-1763067.jpeg?cs=srgb&dl=pexels-sebastian-ervi-1763067.jpg&fm=jpg);
+}
+
+#three{
+    background-image: url(https://img.freepik.com/premium-photo/crowd-people-dance-floor-pink-blue-lights_106386-250.jpg?w=360);
+}
+
+#four{
+    background-image: url(https://img.freepik.com/premium-photo/live-rock-concert-party-festival-night-club-crowd-cheering-stage-lights-confetti-falling-ch_777271-11912.jpg);
+}
+
+#five{
+    background-image: url(https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?cs=srgb&dl=pexels-wendy-wei-1190298.jpg&fm=jpg);
+}
+
+#six{
+    background-image: url(https://img.freepik.com/free-vector/silhouette-party-audience-spotlight-background_1048-14626.jpg);
+}
+
+#seven{
+    background-image: url(https://static8.depositphotos.com/1005731/1068/v/450/depositphotos_10687146-stock-illustration-music-event-background-vector-eps10.jpg);
+}
+
+#eight{
+    background-image: url(https://st.depositphotos.com/1053646/1770/i/450/depositphotos_17700789-stock-photo-dance-club.jpg);
+}
+
+.gallery-image:hover{
+    transform: scale(1.05);
+}
+
+.price-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 0;
+    padding: 1.5rem 13rem;
+}
+
+.price-card{
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    height: 28rem;
+    width: 20rem;
+}
+
+.price-card:hover{
+    transform: scale(1.05);
+}
+
+.price-text{
+    text-transform: capitalize;
+    background-color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.price{
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 1rem 0;
+}
+
+.button-check-out, .button-contact-us{
+    background-color: rgb(100, 100, 100);
+    width: 8rem;
+    height: 2rem;
+    font-weight: bold;
+    border: none;
+}
+
+.button-check-out:hover{
+    color: var(--header-color);
+    transition: 0.2s linear;
+}
+
+.inputs{
+    max-width: 55rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.input-field, .input-field-area{
+    background-color: var(--header-color);
+    width: 100%;
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+    margin: 0.5rem;
+}
+
+.input-field-area{
+    width: 54rem;
+}
+
+.input-field:hover{
+    background-color: #444;
+}
+
+.input-field-area:hover{
+    background-color: #444;
+}
+
+footer{
+    background-color: var(--footer-color);
+}
+
+.for-more-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 1rem auto;
+}
+
+.for-more h3{
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-top: 1rem;
+}
+
+.for-more i{
+    color: var(--main-color);
+}
+
+.for-more a:hover{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.credits{
+    border-top: 1px solid var(--header-color);
+}
+
+.credits p{
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.creator{
+    color: var(--main-color);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--header-color);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 600px){
+    a {
+        padding-left: 5px;
+    }
+    
+    header {
+        padding: 0.75rem 4.5%;
+    }
+    
+    .logo {
+        font-size: 10.5px;
+    }
+    
+    section{
+        padding: 200px;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+    
+    .home-content{
+        padding-bottom: 1rem;
+        margin: 1rem auto;
+        max-width: 25rem;
+    }
+    
+    .change-color{
+        height: 50px;
+        width: 60px;
+    }
+    
+    .change-color p{
+        padding-right: 2.5px;
+        padding-left: 5px;
+    }
+    
+    .colors{
+        width: 100px;
+        height: 40px;
+        margin-top: 4px;
+        max-width: 50px;
+    }
+    
+    .gear-span{
+        height: 19px;
+        width: 19px;
+    }
+    
+    .gear-container1{
+        width: 19px;
+        height: 19px;
+    }
+    
+    .toggle-color{
+        width: 19px;
+        height: 19px;
+    }
+    
+    .home-image{
+        max-width: 25rem;
+        padding-top: 1rem;
+        width: 175px;
+        height: 250px;
+    }
+    
+    .service-content{
+        padding-bottom: 1rem;
+        margin: 1rem auto;
+        max-width: 35rem;
+    }
+    
+    .current-service{
+        margin: 0.25rem;
+        padding: 1.5rem 1rem;
+        border-radius: 0.25rem;
+        max-width: 7.5rem;
+    }
+    
+    .text-head{
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+    
+    .service-content .fa-circle{
+        font-size: 1.5rem;
+    }
+    
+    .service-content .fa-location-dot, .fa-envelope, .fa-music, .fa-utensils, .fa-image, .fa-list-check{
+        font-size: 0.75rem;
+        padding-bottom: 55.5px;
+        padding-left: 55.5px;
+    }
+    
+    .service-content .fa-envelope, .fa-music, .fa-image, .fa-list-check, .fa-utensils{
+        padding-bottom: 55.5px;
+        padding-left: 54px;
+    }
+    
+    .about-content{
+        max-width: 47.5rem;
+        width: 50rem;
+        padding-top: 25px;
+    }
+    
+    .about-image{
+        max-width: 25rem;
+        width: 25rem;
+        border: solid white 2.5px;
+        border-radius: 0.75rem;
+    }
+    
+    .about-text{
+        font-size: 1rem;
+        padding-top: 40px;
+    }
+    
+    .about-text, .about-small{
+        padding-bottom: 10px;
+        padding-left: 15px;
+    }
+    
+    .button-contact-us{
+        margin-left: 1rem;
+    }
+    
+    .gallery-content{
+        padding-bottom: 1rem;
+        margin: 1rem auto;
+        max-width: 40rem;
+    }
+    
+    .gallery-image{
+        margin: 0.25rem;
+        padding: 1.5rem 1rem;
+        border-radius: 0.25rem;
+        width: 6rem;
+        height: 4rem;
+        border: solid white 2.5px;
+    }
+    
+    .price-content{
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
+        gap: 0;
+        padding: 0.75rem 6.5rem;
+    }
+    
+    .price-card{
+        padding: 0.5rem 0;
+        border-radius: 0.25rem;
+        height: 14rem;
+        width: 10rem;
+    }
+    
+    .price-text{
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+    
+    .price{
+        padding: 0.5rem 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    
+    li{
+        padding: 0.5rem 0;
+    }
+    
+    .button-check-out, .button-contact-us{
+        width: 4rem;
+        height: 1rem;
+    }
+    
+    .inputs{
+        max-width: 27.5rem;
+        margin: 0.5rem auto;
+    }
+    
+    .input-field, .input-field-area{
+        width: 100%;
+        border-radius: 0.15rem;
+        font-size: 0.5rem;
+        padding: 0.35rem 0;
+        margin: 0.25rem;
+    }
+    
+    .input-field-area{
+        width: 27rem;
+    }
+    
+    .for-more-container{
+        margin: 0.5rem auto;
+    }
+    
+    .for-more h3{
+        font-size: 12px;
+        margin-top: 0.5rem;
+    }
+    
+    .credits{
+        border-top: 0.5px solid var(--header-color);
+    }
+    
+    .credits p{
+        font-weight: 250;
+        font-size: 7.5px;
+        margin-top: 0.75rem;
+        padding-bottom: 0.65rem;
+    }
+    
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: var(--main-color);
+        border-radius: 6px;
+    }
+}
